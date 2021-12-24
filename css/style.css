@@ -199,3 +199,13 @@ footer {
   text-transform: none;
   text-decoration: none;
 }
+
+.h5-title {
+  font-family: 'Dosis', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: none;
+  text-decoration: none;
+}
