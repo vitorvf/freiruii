@@ -17,66 +17,79 @@
 </head>
 
 <body>
-  <header class="p-3 bg-custom-header text-white">
-    <div id="teste" class="container">
-      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+  <header class=" text-white">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
           <img src="/imgs/logo.png" width="170" height="170" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="drop-fonts px-2 text-bg collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
 
-          <ul class="mg-left nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-            <li><a href="index.html" class="nav-link px-2 text-secondary">Inicio</a></li>
-
-            <div class="drop-fonts dropdown nav-link px-2 text-bg">
-              <a class="drop-color" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Quem Somos
               </a>
-
-
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item nav-link text-sub px-2" href="quem-somos.html">Quem Somos</a></li>
-                <li><a class="dropdown-item nav-link text-sub px-2" href="carisma-franciscano.html">Carisma Franciscano</a></li>
-
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="quem-somos.html">Quem Somos</a></li>
+                <li><a class="dropdown-item" href="carisma-franciscano.html">Carisma Franciscano</a></li>
               </ul>
-            </div>
-            <li><a href="biografia.html" class="nav-link px-2 text-bg">Biografia</a></li>
-            <li><a href="homilias.html" class="nav-link px-2 text-bg">Homilias</a></li>
-            <li><a href="textos.html" class="nav-link px-2 text-bg">Textos</a></li>
-            <li><a href="poesias.html" class="nav-link px-2 text-bg">Poesias</a></li>
-            <div class="drop-fonts dropdown nav-link px-2 text-bg">
-              <a class="drop-color" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                Depoimentos
-              </a>
 
 
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item nav-link text-sub px-2" href="depoimentos.html">Depoimentos</a></li>
-                <li><a class="dropdown-item nav-link text-sub px-2" href="historias-frei-rui.html">Histórias do Frei Rui </a></li>
 
-              </ul>
-            </div>
-            <div class="drop-fonts dropdown nav-link px-2 text-bg">
-              <a class="drop-color" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                Eventos
-              </a>
+            <li class="nav-item">
+              <a class="nav-link" href="biografia.html">Biografia</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="homilias.html">Homilias</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="textos.html">Textos</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="poesias.html">Poesias</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="depoimentos.html">Depoimentos</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="historias-frei-rui.html">Historias do Frei Rui</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="eventos.html">Eventos</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="acoes-culturais.html">Ações Culturais</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="acoes-ajuda-ao-proximo.html">Ações de ajuda ao proximo</a>
+            </li>
 
 
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item nav-link text-sub px-2" href="eventos.html">Eventos</a></li>
-                <li><a class="dropdown-item nav-link text-sub px-2" href="acoes-culturais.html">Ações Culturais</a></li>
-                <li><a class="dropdown-item nav-link text-sub px-2" href="acoes-ajuda-ao-proximo.html">Ações de Ajuda ao Próximo
-                  </a></li>
 
-              </ul>
-            </div>
+            </li>
+
+
 
           </ul>
 
-
-
-
-
+        </div>
       </div>
-    </div>
+    </nav>
   </header>
 
   <section>
@@ -86,7 +99,7 @@
     </div>
 
 
-    <div class="p-center">
+    <div class="p-text-center">
       <div class="p-carisma">
         <p style="text-align: justify;">
           Frei Rui Guido Depiné nasceu em 08 de outubro de 1942, em Rodeio, SC.<br />
@@ -163,7 +176,7 @@
     </div>
 
     <div class="p-center">
-      <img width="940.16" height="649.09" src="/imgs/frei-rui-abencoando.jpg" alt="">
+      <img class="img-responsivo" width="940.16" height="649.09" src="/imgs/frei-rui-abencoando.jpg" alt="">
     </div>
 
 
@@ -171,19 +184,19 @@
 
 
 
-  <footer class="">
+  <footer>
     <div class="container">
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-8 text-footer">
           <span>Legado Frei Rui Guido Depiné | 2021
           </span>
         </div>
-        <div class="col-md-4 d-flex justify-content-end">
-          <a href="" class="btn btn-outline">
+        <div class="col-md-4 d-flex justify-content-end icons-footer">
+          <a href="https://www.facebook.com/Legado-do-Frei-Rui-Depin%C3%A9-101772318808572/" class="btn btn-outline">
             <i class="fab fa-facebook"></i>
           </a>
 
-          <a href="" class="btn btn-outline ml-2">
+          <a href="https://www.youtube.com/channel/UCNC-pWwv7UpVAOZ9nBH7-HA" class="btn btn-outline ml-2">
             <i class="fab fa-youtube"></i>
           </a>
         </div>
@@ -195,7 +208,7 @@
 
 
 
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
 
 </body>

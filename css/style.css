@@ -4,15 +4,15 @@
   box-sizing: border-box;
 }
 
-/* body {
-  margin: 0;
-} */
+body {
+  overflow-x: hidden;
+}
 
 .bg-custom-header {
   background-color: #b7cde2;
 }
 
-.text-bg {
+.text-bg a {
   color: #2364ac !important;
 }
 
@@ -59,6 +59,10 @@ header {
   height: 170px;
   width: 1349px;
 }
+
+.navbar {
+  z-index: 999;
+}
 /* Fim header */
 
 /* Footer */
@@ -99,6 +103,12 @@ footer {
 }
 
 .p-center {
+  /* width: 980px; */
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.p-text-center {
   width: 980px;
   padding: 0 20px;
   margin: 0 auto;
@@ -134,12 +144,6 @@ footer {
   text-transform: none;
   text-decoration: none;
 }
-/* 
-.h-center {
-  width: 980px;
-  padding: 0 20px;
-  margin: 0 auto;
-} */
 
 .borda-custom {
   border-bottom: 2px solid red;
@@ -164,7 +168,6 @@ footer {
 
 .btn-custom {
   padding: 15px 0 20px;
-  /* padding: 40px 0 20px; */
 }
 
 .button-bb {
@@ -174,7 +177,7 @@ footer {
   border: none;
   border-radius: 100px;
   padding: 0px 23px;
-  /* margin: 40px auto 0px 0px; */
+
   animation: 1s ease 0s 1 normal forwards running lbWRkT;
   cursor: pointer;
   transition: all 0.3s ease 0s;
@@ -209,3 +212,120 @@ footer {
   text-transform: none;
   text-decoration: none;
 }
+
+.bg-light {
+  background: #b7cde2 !important;
+}
+
+/* // Dispositivos extra small (telefones em modo retrato, com menos de 576px) */
+@media (max-width: 575.98px) {
+  html,
+  body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  header {
+    width: 414px;
+    height: 196px;
+  }
+
+  .p-center {
+    /* width: auto; */
+    /* width: 980px; */
+    padding: 0 48px;
+    margin: 0 auto;
+  }
+
+  .p-text-center {
+    width: auto;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+
+  .img-responsivo {
+    width: 310px;
+    height: 243px;
+  }
+
+  .h1-quemsomos h1 {
+    font-size: 30px;
+  }
+
+  .card-size {
+    width: 267px;
+  }
+
+  .centro-card {
+    display: block;
+  }
+
+  .text-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icons-footer {
+    justify-content: center !important;
+  }
+
+  .img-mobile {
+    width: 408px;
+    height: 310px;
+  }
+}
+
+/* // Dispositivos small (telefones em modo paisagem, com menos de 768px) */
+@media (max-width: 767.98px) {
+}
+
+/* // Dispositivos médios (tablets com menos de 992px) */
+
+/* // Dispositivos large (desktops com menos de 1200px) */
+@media (max-width: 1199.98px) {
+}
+
+/* // Dispositivos extra large (desktops grandes)
+// Nenhuma media query, já que o breakpoint extra large não possui nenhum limite acima. */
+
+/* @media (max-width: 991.98px) {
+  html,
+  body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  header {
+    width: 768px;
+  }
+
+  .centro-card {
+    display: block;
+  }
+
+  .p-center {
+       padding: 0 205px;
+    margin: 0 auto;
+  }
+
+  .p-text-center {
+    width: auto;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+
+  .img-responsivo {
+    width: 390px;
+    height: 300px;
+  }
+
+  .h1-quemsomos h1 {
+    font-size: 30px;
+  }
+
+  .card-size {
+    width: 267px;
+  }
+}
+ */
