@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Django Girls blog</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" integrity="sha384-WXEe6SF/LiwudzPd11Un4jynGE1igNY+6Y8rW2kwxHx7tUFELlXsc+Tm1bnmCg6Q" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="./css/edit.css">
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script>
+        // window.onload = () => {
+        //     const postsRaw = [...document.getElementsByClassName('post-cruncher')]
+        //     postsRaw.forEach((rawPost) => {
+        //         // Converte o markdown dos posts em html
+        //         rawPost.innerHTML = window.markdownit().render(rawPost.innerHTML)
+        //     })
+        // }
+  </script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Legado do Frei Rui Guido Depiné</title>
+</head>
+
+<body>
+  <header class=" text-white">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="/static/logo.png" width="170" height="170" alt="Legado Frei Rui, contornos do Frei Rui">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="drop-fonts px-2 text-bg collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+
+            <li class="nav-item">
+
+              <span style="display: flex; flex-direction: row; align-items: center; margin-left: 10px;">
+                <a class="nav-link" href="/category/1/edit/">
+                  <i class="fas fa-edit"></i>
+                </a>
+
+                <a class="nav-link" href="/posts/lol/">
+                  lol
+                </a>
+
+              </span>
+
+            </li>
+
+
+
+            <li class="nav-item dropdown">
+
+              <span style="display: flex; flex-direction: row; align-items: center; margin-left: 10px;">
+                <a class="nav-link" href="/category/2/edit/">
+                  <i class="fas fa-edit"></i>
+                </a>
+
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  &quot;&quot;
+                </a>
+
+              </span>
+
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+
+                  <span style="display: flex; flex-direction: row; align-items: center; margin-left: 10px;">
+                    <a class="nav-link" href="/category/2/edit/">
+                      <i class="fas fa-edit"></i>
+                    </a>
+
+                    <a class="dropdown-item" href="/posts/%22%22/">
+                      &quot;&quot;
+                    </a>
+
+                  </span>
+
+                </li>
+                <!-- assign next element to a variable -->
+
+                <li>
+
+                  <span style="display: flex; flex-direction: row; align-items: center; margin-left: 10px;">
+                    <a class="nav-link" href="/category/3/edit/">
+                      <i class="fas fa-edit"></i>
+                    </a>
+
+                    <a class="dropdown-item" href="/posts/kek/">
+                      kek
+                    </a>
+                </li>
+
+                </span>
+
+
+              </ul>
+            </li>
+
+
+
+
+
+            <li class="nav-item">
+
+              <span style="display: flex; flex-direction: row; align-items: center; margin-left: 10px;">
+                <a class="nav-link" href="/category/4/edit/">
+                  <i class="fas fa-edit"></i>
+                </a>
+
+                <a class="nav-link" href="/posts/aaaaaaaaaaa/">
+                  aaaaaaaaaaa
+                </a>
+
+              </span>
+
+            </li>
+
+
+
+            <li class="nav-item">
+
+              <span style="display: flex; flex-direction: row; align-items: center; margin-left: 10px;">
+                <a class="nav-link" href="/category/5/edit/">
+                  <i class="fas fa-edit"></i>
+                </a>
+
+                <a class="nav-link" href="/posts/vish/">
+                  vish
+                </a>
+
+              </span>
+
+            </li>
+
+
+
+            <li class="nav-item">
+
+              <span style="display: flex; flex-direction: row; align-items: center; margin-left: 10px;">
+                <a class="nav-link" href="/category/7/edit/">
+                  <i class="fas fa-edit"></i>
+                </a>
+
+                <a class="nav-link" href="/posts/a/">
+                  a
+                </a>
+
+              </span>
+
+            </li>
+
+
+
+            <li class="nav-item">
+
+              <span style="display: flex; flex-direction: row; align-items: center; margin-left: 10px;">
+                <a class="nav-link" href="/category/8/edit/">
+                  <i class="fas fa-edit"></i>
+                </a>
+
+                <a class="nav-link" href="/posts/aaaaaaa/">
+                  aaaaaaa
+                </a>
+
+              </span>
+
+            </li>
+
+
+
+            <li class="nav-item">
+
+              <span style="display: flex; flex-direction: row; align-items: center; margin-left: 10px;">
+                <a class="nav-link" href="/category/9/edit/">
+                  <i class="fas fa-edit"></i>
+                </a>
+
+                <a class="nav-link" href="/posts/aaaaaaaaaaaaaa/">
+                  aaaaaaaaaaaaaa
+                </a>
+
+              </span>
+
+            </li>
+
+
+
+            <li class="nav-item">
+
+              <span style="display: flex; flex-direction: row; align-items: center; margin-left: 10px;">
+                <a class="nav-link" href="/category/10/edit/">
+                  <i class="fas fa-edit"></i>
+                </a>
+
+                <a class="nav-link" href="/posts/bbbbb/">
+                  bbbbb
+                </a>
+
+              </span>
+
+            </li>
+
+
+
+            <li class="nav-item">
+
+              <span style="display: flex; flex-direction: row; align-items: center; margin-left: 10px;">
+                <a class="nav-link" href="/category/6/edit/">
+                  <i class="fas fa-edit"></i>
+                </a>
+
+                <a class="nav-link" href="/posts/aaaaa/">
+                  aaaaa
+                </a>
+
+              </span>
+
+            </li>
+
+
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="content container" style="height: auto; min-height: 100%;">
+    <div class="row">
+
+      <script src="/static/toastui-editor-all.min.js"></script>
+      <script src="/static/tui-color-picker.min.js"></script>
+      <script src="/static/toastui-editor-plugin-color-syntax.min.js"></script>
+      <script src="/static/pt-br.min.js"></script>
+      <script src="/static/tui-time-picker.min.js"></script>
+      <script src="/static/tui-date-picker.min.js"></script>
+      <script>
+        // Esse onLoadCallback é outro onload de outro arquivo qualquer, para
+        // que, quando a página carregar, ele inicie todos os eventos que estão
+        // marcados com onload
+
+        const onLoadCallback = window.onload || function () { };
+
+        window.onload = () => {
+          // chama o evento onload registrado antes desse
+          onLoadCallback();
+
+          const PREFIX = 'toastui-editor-';
+
+          const addLangs = (i18n) => {
+            i18n.setLanguage(['pt', 'pt-BR'], {
+              'Align text left': 'Alinhar texto a esquerda',
+            });
+
+
+            i18n.setLanguage(['pt', 'pt-BR'], {
+              'Align text center': 'Alinhar texto ao centro',
+            });
+
+            i18n.setLanguage(['pt', 'pt-BR'], {
+              'Justify text': 'Justificar texto',
+            });
+
+            i18n.setLanguage(['pt', 'pt-BR'], {
+              'Align text right': 'Alinhar texto a direita',
+            });
+          }
+
+          const createToolbarItemOption = (alignContent, i18n) => {
+            return [
+              {
+                name: 'alignLeft',
+                tooltip: i18n.get('Align text left'),
+                className: `${PREFIX}toolbar-icons align-left`,
+                // roda a função inscrita em markdownCommands ou wysiwygCommands
+                command: 'alignTextLeft'
+              },
+              {
+                name: 'alignCenter',
+                tooltip: i18n.get('Align text center'),
+                className: `${PREFIX}toolbar-icons align-center`,
+                command: 'alignTextCenter'
+              },
+              {
+                name: 'alignJustify',
+                tooltip: i18n.get('Justify text'),
+                className: `${PREFIX}toolbar-icons align-justify`,
+                command: 'alignTextJustify'
+              },
+              {
+                name: 'alignRight',
+                tooltip: i18n.get('Align text right'),
+                className: `${PREFIX}toolbar-icons align-right`,
+                command: 'alignTextRight'
+              },
+            ]
+          }
+
+          const createSelection = (
+            tr,
+            selection,
+            SelectionClass,
+            openTag,
+            closeTag
+          ) => {
+            const { mapping, doc } = tr;
+            const { from, to, empty } = selection;
+            const mappedFrom = mapping.map(from) + openTag.length;
+            const mappedTo = mapping.map(to) - closeTag.length;
+
+            return empty
+              ? SelectionClass.create(doc, mappedTo, mappedTo)
+              : SelectionClass.create(doc, mappedFrom, mappedTo);
+          }
+
+          let currentEditorEl;
+
+          /**
+           * Align plugin
+           * @param {Object} context - plugin context for communicating with editor
+           * @param {Object} options - options for plugin
+           */
+          const alignTextPlugin = (
+            context,
+            options = {}
+          ) => {
+            const { eventEmitter, i18n, usageStatistics = false, pmState } = context;
+
+            addLangs(i18n);
+            const toolbarItems = createToolbarItemOption(null, i18n);
+
+            const pluginReturn = {
+              markdownCommands: {
+                alignTextLeft: (_, ...rest) => pluginReturn.markdownCommands.alignText({ selectedAlignment: 'left' }, ...rest),
+                alignTextRight: (_, ...rest) => pluginReturn.markdownCommands.alignText({ selectedAlignment: 'right' }, ...rest),
+                alignTextCenter: (_, ...rest) => pluginReturn.markdownCommands.alignText({ selectedAlignment: 'center' }, ...rest),
+                alignTextJustify: (_, ...rest) => pluginReturn.markdownCommands.alignText({ selectedAlignment: 'justify' }, ...rest),
+
+                alignText: ({ selectedAlignment }, { tr, selection, schema }, dispatch) => {
+                  if (selectedAlignment) {
+                    const slice = selection.content();
+                    const textContent = slice.content.textBetween(0, slice.content.size, '\n');
+                    const openTag = `<span style="display: block; text-align: ${selectedAlignment};">`;
+                    const closeTag = `</span>`;
+                    const colored = `${openTag}${textContent}${closeTag}`;
+
+                    tr.replaceSelectionWith(schema.text(colored)).setSelection(
+                      createSelection(tr, selection, pmState.TextSelection, openTag, closeTag)
+                    );
+
+                    dispatch(tr);
+
+                    return true;
+                  }
+                  return false;
+                },
+              },
+              wysiwygCommands: {
+                alignTextLeft: (_, ...rest) => pluginReturn.wysiwygCommands.alignText({ selectedAlignment: 'left' }, ...rest),
+                alignTextRight: (_, ...rest) => pluginReturn.wysiwygCommands.alignText({ selectedAlignment: 'right' }, ...rest),
+                alignTextCenter: (_, ...rest) => pluginReturn.wysiwygCommands.alignText({ selectedAlignment: 'center' }, ...rest),
+                alignTextJustify: (_, ...rest) => pluginReturn.wysiwygCommands.alignText({ selectedAlignment: 'justify' }, ...rest),
+
+                alignText: ({ selectedAlignment }, { tr, selection, schema }, dispatch) => {
+                  if (selectedAlignment) {
+                    const { from, to } = selection;
+                    const attrs = { htmlAttrs: { style: `display: block; text-align: ${selectedAlignment};` } };
+                    const mark = schema.marks.span.create(attrs);
+
+                    tr.addMark(from, to, mark);
+                    dispatch(tr);
+
+                    return true;
+                  }
+                  return false;
+                },
+              },
+              toolbarItems: toolbarItems.map((item, i) => ({
+                groupIndex: 0,
+                itemIndex: 3 + i,
+                item,
+              })),
+              toHTMLRenderers: {
+                htmlInline: {
+                  span(node, { entering }) {
+                    return entering
+                      ? { type: 'openTag', tagName: 'span', attributes: node.attrs }
+                      : { type: 'closeTag', tagName: 'span' };
+                  },
+                },
+              },
+            };
+
+            return pluginReturn;
+          }
+
+          // Adiciona o CSS do alinhador de imagens
+          const addInlineCss = (css) => {
+            const { head } = document;
+            const style = document.createElement('style');
+            style.type = 'text/css';
+            style.innerHTML = css;
+            head.appendChild(style);
+          }
+          addInlineCss(
+            `.align-left {
+                background: url(/static/align_text_left-64x64.png);
+                background-position: center;
+                background-size: contain;
+            }
+            .align-center {
+                background: url(/static/align_text_center-64x64.png);
+                background-position: center;
+                background-size: contain;
+            }
+            .align-justify {
+                background: url(/static/align_text_justify-64x64.png);
+                background-position: center;
+                background-size: contain;
+            }
+            .align-right {
+                background: url(/static/align_text_right-64x64.png);
+                background-position: center;
+                background-size: contain;
+            }`
+          );
+
+          // Função utilizada para upload de multiplas imagens
+
+          const addImageBlobHook = async (_blob, callback) => {
+
+            const imagesForm = document.getElementById('toastuiImageFileInput');
+            const { files = [] } = imagesForm;
+            const descriptionForm = document.getElementById('toastuiAltTextInput');
+            const description = descriptionForm.value;
+            // Lógica para upar imagens respeitando o token de CSRF
+            const iframeToUpload = document.getElementById(
+              'gallery'
+            ).contentWindow.document;
+            const galleryForm = iframeToUpload.getElementById(
+              'gallery-form'
+            );
+            const imagesInput = iframeToUpload.getElementById('id_images');
+            // Popula a input dentro do iframe com as imagens da input do editor
+            imagesInput.files = files;
+
+            const formData = new FormData(galleryForm);
+            const uploaded = await fetch(
+              '/gallery/new/',
+              {
+                method: 'POST',
+                body: formData,
+              }
+            );
+
+            if (uploaded.ok) {
+              const json = await uploaded.json();
+              if (json && Array.isArray(json.images)) {
+                if (typeof json.gallery_id === "number" || typeof json.gallery_id === "string") {
+                  attachGallery(json.gallery_id);
+                }
+
+                json.images.forEach((imageUrl) => {
+                  // console.log(imageUrl);
+                  callback(imageUrl, description);
+                });
+              }
+            }
+          };
+
+          toastui.usageStatistics = false;
+          const { Editor = null } = toastui;
+
+          Editor.setLanguage('pt-BR', {
+            'Choose a file': 'Abrir arquivo',
+            'Select image file': 'Selecione uma ou mais imagens',
+          });
+
+          const plugins = [Editor.plugin.colorSyntax, alignTextPlugin];
+          const editor = new Editor({
+            el: document.querySelector('#editor'),
+            height: '500px',
+            initialEditType: 'wysiwyg',
+            previewStyle: 'vertical',
+            // When editing a post, set initialValue to the post content
+            initialValue: '![](/media/images/image3\u002D959947.png)![](/media/images/image5\u002D611368.png)![](/media/images/image1\u002D841324.png)![](/media/images/image5\u002D631414.png)adksojadipjasidpjsaiodjsaohdnihfnojadufsdahfoudsanh\u000D\u000Ahsdajfisaijfisdajfodsjfisdaj\u000D\u000A**afkjakmdskamjdas**\u000D\u000A\u000D\u000A### sadksakdlaskdlsa\u000D\u000A\u000D\u000A# dadksakdlaskdlsa \u0027',
+            plugins,
+            usageStatistics: false,
+            language: 'pt-BR',
+            hooks: {
+              addImageBlobHook,
+            },
+          });
+          window.editor = editor;
+
+          // Hack necessário para podermos criar uma galeria dentro da pasta de posts
+          // sem salvar ou abandonar a página (fetch para fazer o post não funciona
+          // por causa da proteção de CSRF, assim carregamos os forms num iframe)
+
+          (async () => {
+            const response = await fetch('/gallery/new/');
+            const blob = await response.blob();
+            const text = await blob.text();
+            // console.log(text);
+            const iframe = document.createElement('iframe');
+            iframe.id = 'gallery';
+            iframe.srcdoc = text;
+            iframe.style.display = 'none';
+            document.body.append(iframe);
+          })();
+
+          // date time picker
+          tui.usageStatistics = false;
+          const { DatePicker = null } = tui;
+
+          // pt-BR para date time picker
+          DatePicker.localeTexts['pt-BR'] = {
+            titles: {
+              // days
+              DD: ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'],
+              // daysShort
+              D: ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sab'],
+              // months
+              MMMM: [
+                'Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho',
+                'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'
+              ],
+              // monthsShort
+              MMM: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez']
+            },
+            titleFormat: 'MMM yyyy',
+            todayFormat: 'D, dd \\de MMMM \\de yyyy',
+            date: 'Date',
+            time: 'Time'
+          };
+
+          const target = document.getElementById('id_published_date');
+          const instance = new tui.DatePicker('#datepicker-wrapper', {
+            usageStatistics: false,
+            input: {
+              element: target,
+              // formato do django: 2021-12-22 02:45:38.594486+00:00
+              format: 'yyyy-MM-dd HH:mm:00.000000-03:00',
+            },
+            language: 'pt-BR',
+            timePicker: true,
+            date: new Date('2021\u002D12\u002D01 18:20:00+00:00'),
+          });
+
+          // set select default category
+          const defaultValue = "lol";
+          const categoryField = document.getElementById('id_category');
+          let optionValue = null;
+
+          for (const option of categoryField.childNodes) {
+            if (option.innerHTML === defaultValue) {
+              optionValue = option.value;
+              break;
+            }
+          }
+          if (optionValue !== null) {
+            categoryField.value = optionValue;
+          }
+
+          // select default galleries
+          const defaultGalleries = "[\u0027Gallery object (13)\u0027, \u0027Gallery object (14)\u0027, \u0027Gallery object (27)\u0027]";
+          const galleriesField = document.getElementById('id_galleries');
+
+          if (defaultGalleries !== 'FreiRui.Gallery.None') {
+            const galleriesArray = eval(defaultGalleries);
+            for (const option of galleriesField.childNodes) {
+              if (galleriesArray.some((gallery) => gallery === option.innerHTML)) {
+                option.selected = true;
+              }
+            }
+          }
+
+          // seleciona todas as imagens do post
+          const images = document.querySelectorAll('.content img');
+          images.forEach((image) => {
+
+            // adiciona o evento de click para cada imagem
+            image.addEventListener('click', (ev) => {
+              const confirmation = confirm('Tem certeza que deseja sair da página para editar esta imagem?');
+              if (confirmation) {
+                const relativePath = image.src.replace(`${window.location.origin}/media/`, '')
+                window.location.href = `/picture/${relativePath}/edit/`;
+              }
+            });
+          });
+
+
+          // recarrega a página se uma imagem tiver sido editada para previnir cache antigo
+
+          const params = new Proxy(new URLSearchParams(window.location.search), {
+            get: (searchParams, prop) => searchParams.get(prop),
+          });
+          if (params.refresh) {
+            setTimeout(() => {
+
+              // remove refresh param
+              window.history.replaceState(
+                {},
+                document.title,
+                window.location.pathname,
+              );
+              location.reload(true);
+            }, 200);
+          }
+
+
+        }; // final do window.onload
+
+        const imageFormFound = false;
+
+        const overrideImageUpload = () => {
+          const imageForm = document.getElementById('toastuiImageFileInput');
+          if (!imageForm) {
+            window.toastUiWatcher = setTimeout(overrideImageUpload, 500);
+            return;
+          }
+          saveImageBtnFound = true;
+
+          // Permite upar mais de uma imagem por vez
+          imageForm.multiple = true;
+        };
+
+        let startedImageWatcher = false;
+        if (!imageFormFound && !startedImageWatcher) {
+          // só roda uma vez
+          window.toastUiWatcher = setTimeout(overrideImageUpload, 500);
+          startedImageWatcher = true;
+        }
+        if (imageFormFound) {
+          clearTimeout(window.toastUiWatcher);
+        }
+
+        /** @todo integrity */
+
+        const addCss = (fileName) => {
+          const { head } = document;
+          const link = document.createElement('link');
+          link.type = 'text/css';
+          link.rel = 'stylesheet';
+          link.href = fileName;
+          head.appendChild(link);
+        };
+
+        const editorStylesheet = "/static/toastui-editor.min.css";
+        const colorPickerStylesheet = "/static/tui-color-picker.min.css";
+        const colorSyntaxPlugin = "/static/toastui-editor-plugin-color-syntax.min.css";
+        const timePickerStylesheet = "/static/tui-time-picker.min.css";
+        const datePickerStylesheet = "/static/tui-date-picker.min.css";
+        addCss(editorStylesheet);
+        addCss(colorPickerStylesheet);
+        addCss(colorSyntaxPlugin);
+        addCss(timePickerStylesheet);
+        addCss(datePickerStylesheet);
+
+        const onClickSubmit = (_ev) => {
+          // insere o texto do editor no input do form
+          const _target = document.getElementById('id_text');
+          _target.value = editor.getMarkdown();
+
+          const submit_post_form = document.getElementById('submit_post_form');
+          submit_post_form.click();
+        };
+        window.onClickSubmit = onClickSubmit;
+
+        // Vincula as galerias criadas no post ao post
+
+        const attachGallery = (galleryId) => {
+          galleryId = `Gallery object (${galleryId})`;
+
+          const galleries = document.getElementById('id_galleries');
+          const lastGallery = galleries.lastElementChild;
+          const galleryValue = (lastGallery.value | 0) + 1;
+          const option = document.createElement('option');
+          option.value = galleryValue;
+          option.selected = true;
+          option.innerHTML = galleryId;
+          galleries.appendChild(option);
+        };
+        window.attachGallery = attachGallery;
+        const metaTag = '<meta http-equiv="Cache-control" content="no-cache">';
+        document.head.insertAdjacentHTML('beforeend', metaTag);
+
+      </script>
+
+      <form id="post_form" method="post" action="" enctype="multipart/form-data">
+        <div id="editor" style="margin-top: 80px;"></div>
+        <div id="datepicker-wrapper" style="display: flex; justify-content: end; margin-right: 10%;"></div>
+
+        <div class="post-forms">
+          <input type="hidden" name="csrfmiddlewaretoken" value="GSFEz9Bxuqxzwd0mvuzFd38DPbKuiz6XjFE80ogI1jE7MZ5I1NHm1lZFj3skRXCR">
+          <p class="">
+            <label class="title-titulo" for="id_title">Título:</label>
+            <input class="input-edit" type="text" name="title" maxlength="200" value="aaaaaaaaaakkkkkkkkkaa bicho to passando mal se é loco kkkkk doidera" required id="id_title">
+          </p>
+          <p class="sub-title"><label for="id_published_date">Data de publicação (selecione no futuro para agendar):</label> <input class="input-edit" type="text" name="published_date" value="2021-12-01 18:20:00+00:00" autocomplete="off" required id="id_published_date"></p>
+          <p class="sub-title"><label for="id_category">Categoria da postagem:</label> <select class="input-edit" name="category" required id="id_category">
+              <option value="" selected>---------</option>
+
+              <option value="1">lol</option>
+
+              <option value="2">&quot;&quot;</option>
+
+              <option value="3">kek</option>
+
+              <option value="4">aaaaaaaaaaa</option>
+
+              <option value="5">vish</option>
+
+              <option value="6">aaaaa</option>
+
+              <option value="7">a</option>
+
+              <option value="8">aaaaaaa</option>
+
+              <option value="9">aaaaaaaaaaaaaa</option>
+
+              <option value="10">bbbbb</option>
+
+            </select>
+          <div class="form-check form-switch oculto">
+            <input class="form-check-input oculto-input " type="checkbox" id="flexSwitchCheckDefault">
+            <label class="form-check-label labelposition" for="flexSwitchCheckDefault">Published</label>
+
+          </div>
+          </p>
+          <p><label for="id_galleries">Galleries:</label> <select name="galleries" style="display: none;" id="id_galleries" multiple>
+              <option value="1">Gallery object (1)</option>
+
+              <option value="2">Gallery object (2)</option>
+
+              <option value="3">Gallery object (3)</option>
+
+              <option value="4">Gallery object (4)</option>
+
+              <option value="5">Gallery object (5)</option>
+
+              <option value="6">Gallery object (6)</option>
+
+              <option value="7">Gallery object (7)</option>
+
+              <option value="8">Gallery object (8)</option>
+
+              <option value="9">Gallery object (9)</option>
+
+              <option value="10">Gallery object (10)</option>
+
+              <option value="11">Gallery object (11)</option>
+
+              <option value="12">Gallery object (12)</option>
+
+              <option value="13">Gallery object (13)</option>
+
+              <option value="14">Gallery object (14)</option>
+
+              <option value="15">Gallery object (15)</option>
+
+              <option value="16">Gallery object (16)</option>
+
+              <option value="17">Gallery object (17)</option>
+
+              <option value="18">Gallery object (18)</option>
+
+              <option value="19">Gallery object (19)</option>
+
+              <option value="20">Gallery object (20)</option>
+
+              <option value="21">Gallery object (21)</option>
+
+              <option value="22">Gallery object (22)</option>
+
+              <option value="23">Gallery object (23)</option>
+
+              <option value="24">Gallery object (24)</option>
+
+              <option value="25">Gallery object (25)</option>
+
+              <option value="26">Gallery object (26)</option>
+
+              <option value="27">Gallery object (27)</option>
+
+              <option value="28">Gallery object (28)</option>
+
+              <option value="29">Gallery object (29)</option>
+
+              <option value="30">Gallery object (30)</option>
+
+              <option value="31">Gallery object (31)</option>
+
+              <option value="32">Gallery object (32)</option>
+
+              <option value="33">Gallery object (33)</option>
+
+              <option value="34">Gallery object (34)</option>
+
+              <option value="35">Gallery object (35)</option>
+
+            </select>
+
+          </p>
+
+        </div>
+
+        <div class="botao-centro"> <button class="botao-edit" type="button" onclick="onClickSubmit()">Salvar</button></div>
+        <input" type="submit" name="submit" value="Salvar" style="display: none;" id="submit_post_form" />
+      </form>
+
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 text-footer">
+          <span>Legado Frei Rui Guido Depiné | 2021
+          </span>
+        </div>
+        <div class="col-md-4 d-flex justify-content-end icons-footer">
+          <a href="https://www.facebook.com/Legado-do-Frei-Rui-Depin%C3%A9-101772318808572/" class="btn btn-outline">
+            <i class="fab fa-facebook"></i>
+          </a>
+
+          <a href="https://www.youtube.com/channel/UCNC-pWwv7UpVAOZ9nBH7-HA" class="btn btn-outline ml-2">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
